@@ -1,0 +1,21 @@
+table,step,rows_before,rows_after,changed_or_flagged,note
+locations,province spellings standardised,,,600,-> standard province names
+locations,missing province set to 'Unknown',,,25,(cannot be repaired from other data)
+locations,coordinates outside Pakistan set to blank,,,10,(outliers)
+locations,added 'Unknown' member (-1),650,651,-1,
+sellers,missing tier set to 'Unknown',,,22,
+sellers,ratings outside 0-5 set to blank,,,11,(outliers)
+sellers,added 'Unknown' member,420,421,-1,
+products,category names standardised,,,3200,-> 12 categories
+products,missing brand set to 'Unknown',,,392,
+products,missing sub_category set to 'Unknown',,,485,
+products,"impossible list_price (<=0 or >1,000,000) set to blank",,,13,(outliers)
+products,impossible weight (<=0 or >100 kg) set to blank,,,17,(outliers)
+products,missing cost_price estimated = list_price x category median ratio,,,170,(assumption)
+products,missing list_price estimated = cost_price / category median ratio,,,13,(assumption)
+products,"flagged cost_price > list_price (kept, flag column)",,,67,
+products,added 'Unknown' member,3200,3201,-1,
+customers,phones standardised to 03XXXXXXXXX,,,41401,(of 41401 given; the rest were invalid)
+customers,implausible birth_year (<1930 or >2010) set to blank,,,142,(outliers)
+customers,missing/invalid city_id mapped to Unknown (-1),,,2233,
+customers,duplicate customers merged under one master ID,45000,42640,2360,(2360 duplicate IDs saved in customer_id_map.csv)
