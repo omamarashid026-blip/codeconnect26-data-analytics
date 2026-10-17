@@ -1,0 +1,140 @@
+return_id,order_item_id,return_date,return_reason,return_status,refund_amount,is_valid_return,reject_reason
+R000055,OI94118,14/01/2024,Quality issue,Approved,1811,True,order_item_id not in order_items
+R000089,OI92084,Jan 16 2024,Damaged product,Refunded,5484,True,order_item_id not in order_items
+R000317,OI99844,2024-01-29,Damaged product,Refunded,1342,True,order_item_id not in order_items
+R000472,OI90501,2024-02-05,Wrong item delivered,Refunded,250592,True,order_item_id not in order_items
+R000899,OI95135,26/02/2024,Size/fit issue,Refunded,2556,True,order_item_id not in order_items
+R001420,OI96245,2024-03-21,Damaged product,Refunded,2265,True,order_item_id not in order_items
+R001814,OI92717,Apr 6 2024,Size/fit issue,Refunded,2666,True,order_item_id not in order_items
+R002166,OI99472,2024-04-15,Quality issue,Refunded,4539,True,order_item_id not in order_items
+R002343,OI90430,2024-04-20,Missing parts,Refunded,2752,True,order_item_id not in order_items
+R002355,OI98847,2024-04-21,Wrong item delivered,Rejected,0,False,order_item_id not in order_items
+R002379,OI98172,2024-04-21,Unknown,Refunded,2582,True,order_item_id not in order_items
+R002397,OI97139,2024-04-22,Damaged product,Approved,8227,True,order_item_id not in order_items
+R002530,OI94952,2024-04-27,Changed mind,Approved,2572,True,order_item_id not in order_items
+R002750,OI94752,2024-05-08,Changed mind,Approved,2523,True,order_item_id not in order_items
+R002755,OI94825,2024-05-08,Unknown,Rejected,0,False,order_item_id not in order_items
+R002806,OI93544,2024-05-10,Wrong item delivered,Approved,1023,True,order_item_id not in order_items
+R002822,OI96319,2024-05-11,Unknown,Approved,1258,True,order_item_id not in order_items
+R002995,OI94319,2024-05-18,Size/fit issue,Approved,879,True,order_item_id not in order_items
+R003426,OI96489,2024-06-08,Wrong item delivered,Refunded,1851,True,order_item_id not in order_items
+R003481,OI91259,2024-06-10,Damaged product,Refunded,1569,True,order_item_id not in order_items
+R003496,OI97978,2024-06-11,Damaged product,Approved,1002,True,order_item_id not in order_items
+R003567,OI96891,2024-06-14,Unknown,Refunded,10454,True,order_item_id not in order_items
+R003588,OI97460,2024-06-15,Damaged product,Approved,1316,True,order_item_id not in order_items
+R003990,OI95189,2024-06-26,Quality issue,Refunded,10611,True,order_item_id not in order_items
+R004023,OI93136,2024-06-27,Size/fit issue,Refunded,2433,True,order_item_id not in order_items
+R004126,OI96790,2024-07-01,Not as described,Approved,1004,True,order_item_id not in order_items
+R004178,OI93530,Jul 3 2024,Damaged product,Refunded,9131,True,order_item_id not in order_items
+R004295,OI95152,07/07/2024,Quality issue,Refunded,335,True,order_item_id not in order_items
+R004314,OI97336,Jul 8 2024,Changed mind,Approved,2080,True,order_item_id not in order_items
+R004468,OI96729,15/07/2024,Unknown,Refunded,7944,True,order_item_id not in order_items
+R004545,OI90465,2024-07-18,Damaged product,Refunded,2081,True,order_item_id not in order_items
+R004673,OI95322,23/07/2024,Size/fit issue,Refunded,1087,True,order_item_id not in order_items
+R004679,OI96726,Jul 23 2024,Damaged product,Refunded,898,True,order_item_id not in order_items
+R004786,OI99901,2024-07-28,Late delivery,Approved,31313,True,order_item_id not in order_items
+R004829,OI93394,2024-07-30,Unknown,Refunded,5792,True,order_item_id not in order_items
+R004856,OI96127,2024-08-01,Size/fit issue,Rejected,0,False,order_item_id not in order_items
+R004862,OI94315,2024-08-01,Unknown,Rejected,Rs. 0,False,order_item_id not in order_items
+R004865,OI94694,2024-08-01,Size/fit issue,Approved,3122,True,order_item_id not in order_items
+R005016,OI92431,2024-08-07,Quality issue,Refunded,529,True,order_item_id not in order_items
+R005033,OI94784,2024-08-08,Damaged product,Approved,1075,True,order_item_id not in order_items
+R005210,OI95226,2024-08-15,Size/fit issue,Refunded,1222,True,order_item_id not in order_items
+R005267,OI95876,2024-13-05,Unknown,Approved,1952,True,order_item_id not in order_items
+R005287,OI94982,2024-08-17,Unknown,Refunded,4032,True,order_item_id not in order_items
+R005404,OI99205,2024-08-20,Damaged product,Refunded,2571,True,order_item_id not in order_items
+R005449,OI97560,2024-08-22,Quality issue,Refunded,1965,True,order_item_id not in order_items
+R005463,OI95021,2024-08-22,Colour mismatch,Approved,1598,True,order_item_id not in order_items
+R005511,OI93397,2024-08-23,Wrong item delivered,Approved,14948,True,order_item_id not in order_items
+R005521,OI98226,2024-08-24,Unknown,Refunded,1086,True,order_item_id not in order_items
+R005592,OI98539,2024-08-26,Not as described,Refunded,24244,True,order_item_id not in order_items
+R005745,OI91218,2024-08-31,Quality issue,Refunded,9491,True,order_item_id not in order_items
+R005777,OI90011,2024-09-02,Wrong item delivered,Approved,733,True,order_item_id not in order_items
+R005900,OI90705,2024-09-06,Quality issue,Approved,611,True,order_item_id not in order_items
+R006071,OI97927,2024-09-12,Quality issue,Refunded,2948,True,order_item_id not in order_items
+R006083,OI94331,2024-09-12,Changed mind,Refunded,643,True,order_item_id not in order_items
+R006087,OI90824,2024-09-12,Damaged product,Refunded,3092,True,order_item_id not in order_items
+R006116,OI94893,2024-09-13,Colour mismatch,Refunded,1258,True,order_item_id not in order_items
+R006320,OI96463,2024-09-19,Unknown,Refunded,3393,True,order_item_id not in order_items
+R006523,OI98098,2024-09-26,Quality issue,Refunded,708,True,order_item_id not in order_items
+R006613,OI93103,2024-09-29,Quality issue,Approved,1195,True,order_item_id not in order_items
+R006644,OI90259,2024-09-30,Quality issue,Rejected,0,False,order_item_id not in order_items
+R006718,OI92582,2024-10-03,Damaged product,Refunded,2309,True,order_item_id not in order_items
+R006779,OI95308,2024-10-05,Not as described,Refunded,12756,True,order_item_id not in order_items
+R006822,OI96289,2024-10-06,Unknown,Refunded,Rs. 460,True,order_item_id not in order_items
+R007087,OI93860,Oct 16 2024,Quality issue,Approved,5280,True,order_item_id not in order_items
+R007165,OI91370,2024-10-19,Not as described,Refunded,1044,True,order_item_id not in order_items
+R007290,OI91850,24/10/2024,Wrong item delivered,Refunded,9471,True,order_item_id not in order_items
+R007318,OI96125,2024-10-25,Not as described,Refunded,1272,True,order_item_id not in order_items
+R007401,OI91301,2024-10-27,Quality issue,Refunded,461,True,order_item_id not in order_items
+R007415,OI98879,28/10/2024,Changed mind,Approved,2099,True,order_item_id not in order_items
+R007546,OI96080,2024-11-02,Not as described,Rejected,0,False,order_item_id not in order_items
+R007687,OI96242,2024-11-07,Late delivery,Approved,1845,True,order_item_id not in order_items
+R007729,OI91603,2024-11-09,Size/fit issue,Approved,1209,True,order_item_id not in order_items
+R007979,OI98994,2024-11-16,Quality issue,Refunded,1008,True,order_item_id not in order_items
+R008439,OI90247,2024-11-30,Wrong item delivered,Refunded,1431,True,order_item_id not in order_items
+R008445,OI90433,Nov 30 2024,Unknown,Approved,1899,True,order_item_id not in order_items
+R008729,OI92156,2024-12-08,Colour mismatch,Refunded,4144,True,order_item_id not in order_items
+R008848,OI91623,2024-12-12,Unknown,Refunded,924,True,order_item_id not in order_items
+R008903,OI94296,2024-12-14,Not as described,Refunded,1396,True,order_item_id not in order_items
+R008920,OI98458,2024-12-15,Size/fit issue,Refunded,4684,True,order_item_id not in order_items
+R009120,OI93435,2024-12-21,Size/fit issue,Refunded,2108,True,order_item_id not in order_items
+R009197,OI97925,2024-12-24,Quality issue,Rejected,0,False,order_item_id not in order_items
+R009273,OI94406,26/12/2024,Late delivery,Refunded,2026,True,order_item_id not in order_items
+R009315,OI93722,2024-12-27,Quality issue,Refunded,856,True,order_item_id not in order_items
+R009390,OI91279,30/12/2024,Damaged product,Approved,946,True,order_item_id not in order_items
+R009417,OI97945,2024-12-30,Damaged product,Refunded,2778,True,order_item_id not in order_items
+R009540,OI99322,2025-01-03,Unknown,Approved,2829,True,order_item_id not in order_items
+R009577,OI92087,03/01/2025,Unknown,Refunded,5193,True,order_item_id not in order_items
+R009601,OI98495,2025-01-04,Size/fit issue,Refunded,2816,True,order_item_id not in order_items
+R010130,OI92820,2025-01-21,Size/fit issue,Refunded,6804,True,order_item_id not in order_items
+R010255,OI98925,2025-01-25,Size/fit issue,Rejected,0,False,order_item_id not in order_items
+R010300,OI93849,Jan 26 2025,Not as described,Refunded,1579,True,order_item_id not in order_items
+R010363,OI93160,2025-01-28,Unknown,Refunded,588,True,order_item_id not in order_items
+R010489,OI90128,2025-02-02,Unknown,Refunded,4179,True,order_item_id not in order_items
+R010685,OI95515,2025-02-09,Wrong item delivered,Refunded,802,True,order_item_id not in order_items
+R010691,OI92626,09/02/2025,Damaged product,Refunded,3241,True,order_item_id not in order_items
+R010728,OI93840,2025-02-10,Unknown,Refunded,2686,True,order_item_id not in order_items
+R010730,OI90849,2025-02-10,Damaged product,Refunded,2118,True,order_item_id not in order_items
+R010925,OI92602,2025-02-16,Changed mind,Refunded,6951,True,order_item_id not in order_items
+R010945,OI99712,2025-02-17,Quality issue,Refunded,2035,True,order_item_id not in order_items
+R011206,OI92461,2025-02-25,Size/fit issue,Refunded,2099,True,order_item_id not in order_items
+R011228,OI90116,2025-02-26,Unknown,Refunded,3192,True,order_item_id not in order_items
+R011253,OI90162,26/02/2025,Quality issue,Refunded,1386,True,order_item_id not in order_items
+R011404,OI90101,2025-03-02,Quality issue,Refunded,2491,True,order_item_id not in order_items
+R011456,OI94233,2025-03-04,Damaged product,Rejected,0,False,order_item_id not in order_items
+R011484,OI95009,2025-03-05,Damaged product,Refunded,2605,True,order_item_id not in order_items
+R011981,OI93304,17/03/2025,Quality issue,Refunded,2237,True,order_item_id not in order_items
+R012004,OI92073,2025-03-18,Quality issue,Refunded,2610,True,order_item_id not in order_items
+R012032,OI98942,2025-03-19,Quality issue,Refunded,3944,True,order_item_id not in order_items
+R012148,OI96576,2025-03-22,Size/fit issue,Refunded,1356,True,order_item_id not in order_items
+R012336,OI97296,2025-03-25,Unknown,Refunded,2148,True,order_item_id not in order_items
+R012403,OI95699,2025-03-27,Unknown,Refunded,"Rs. 6,654",True,order_item_id not in order_items
+R012434,OI98060,Mar 28 2025,Changed mind,Approved,774,True,order_item_id not in order_items
+R012457,OI95180,2025-03-28,Quality issue,Refunded,1296,True,order_item_id not in order_items
+R012904,OI94414,2025-04-06,Size/fit issue,Refunded,631,True,order_item_id not in order_items
+R012968,OI91972,2025-04-07,Wrong item delivered,Refunded,227,True,order_item_id not in order_items
+R013052,OI91173,2025-04-09,Not as described,Approved,4947,True,order_item_id not in order_items
+R013125,OI90656,2025-04-11,Late delivery,Refunded,1940,True,order_item_id not in order_items
+R013773,OI97951,2025-05-01,Not as described,Refunded,19300,True,order_item_id not in order_items
+R013929,OI96450,2025-05-05,Damaged product,Refunded,6364,True,order_item_id not in order_items
+R014057,OI97182,2025-05-09,Not as described,Refunded,4900,True,order_item_id not in order_items
+R014442,OI90608,2025-05-21,Damaged product,Rejected,0,False,order_item_id not in order_items
+R014462,OI98382,2025-05-21,Not as described,Refunded,2856,True,order_item_id not in order_items
+R014467,OI95448,2025-05-21,Quality issue,Refunded,1085,True,order_item_id not in order_items
+R014788,OI95099,2025-05-31,Late delivery,Refunded,1719,True,order_item_id not in order_items
+R014890,OI94449,2025-06-03,Size/fit issue,Refunded,16520,True,order_item_id not in order_items
+R014898,OI97522,2025-06-04,Damaged product,Refunded,949,True,order_item_id not in order_items
+R014917,OI94270,2025-06-04,Size/fit issue,Refunded,2491,True,order_item_id not in order_items
+R014976,OI94167,2025-06-06,Wrong item delivered,Rejected,0,False,order_item_id not in order_items
+R015171,OI90706,2025-06-10,Unknown,Refunded,869,True,order_item_id not in order_items
+R015176,OI93261,2025-06-10,Late delivery,Refunded,1093,True,order_item_id not in order_items
+R015228,OI92064,2025-06-11,Not as described,Refunded,2971,True,order_item_id not in order_items
+R015378,OI92523,2025-06-14,Quality issue,Approved,1063,True,order_item_id not in order_items
+R015493,OI97382,2025-06-16,Damaged product,Refunded,5407,True,order_item_id not in order_items
+R015556,OI95802,2025-06-18,Quality issue,Refunded,3147,True,order_item_id not in order_items
+R015637,OI90994,2025-06-20,Damaged product,Refunded,3304,True,order_item_id not in order_items
+R015638,OI99183,2025-06-20,Wrong item delivered,Refunded,3562,True,order_item_id not in order_items
+R015722,OI92899,2025-06-22,Wrong item delivered,Refunded,2347,True,order_item_id not in order_items
+R015753,OI94526,2025-06-23,Changed mind,Refunded,3002,True,order_item_id not in order_items
+R015972,OI99679,28/06/2025,Changed mind,Approved,772,True,order_item_id not in order_items

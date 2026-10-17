@@ -1,0 +1,23 @@
+table,step,rows_before,rows_after,changed_or_flagged,note
+payments,exact duplicate rows removed,168111,164815,3296,
+payments,payment_method (22 spellings) and payment_status standardised,,,164815,"-> 5 methods, 4 statuses"
+payments,negative amount -> absolute value,,,663,
+payments,"amount 9,999,999 placeholder set to blank",,,162,(outliers)
+payments,payment_date missing/impossible left blank,,,5994,
+payments,payments for unknown orders -> rejects file,164815,164815,,
+payments,orders paid in more than one part (main method = largest part),,,4815,
+shipping,exact duplicate rows removed,151228,151228,,
+shipping,courier (22 spellings) and delivery_status standardised,,,151228,-> 6 couriers
+shipping,missing/impossible shipped_date = order_date + 1 day,,,6965,
+shipping,delivered_date before shipped_date -> dates swapped,,,1335,
+shipping,delivery time over 30 days (implausible) -> delivered_date blanked,,,278,(outliers)
+shipping,"fee blank/0/over 10,000 -> that courier's median fee (assumption)",,,9440,(negatives made positive first)
+shipping,shipments for unknown orders -> rejects file,151228,151228,,
+returns,exact duplicate rows removed,16048,16048,,
+returns,return_status standardised (Declined = Rejected),,,16048,-> Refunded / Approved / Rejected
+returns,return_reason standardised (33 spellings -> 9 reasons + Unknown),,,16048,
+returns,"Rejected returns marked not valid (kept in table, ignored in metrics)",,,1322,
+returns,returns for unknown order lines -> rejects file,16048,15909,139,
+returns,return_date impossible/before order -> order_date + 10 days (median),,,256,
+returns,refund_amount above the line's paid value -> capped at line value,,,264,(outliers)
+returns,valid return with refund 0/blank -> full line value (assumption),,,0,
