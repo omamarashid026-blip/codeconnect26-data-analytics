@@ -1,0 +1,20 @@
+table,step,rows_before,rows_after,changed_or_flagged,note
+orders,exact duplicate rows removed,163200,160000,3200,
+orders,order_status standardised,,,160000,-> Delivered / Cancelled / Returned / In Transit
+orders,channel standardised,,,160000,-> App / Web / Mobile Web
+orders,customer_id not found -> 'C_UNKNOWN' (broken reference),,,321,
+orders,impossible/unreadable order_date found,,,1605,"(e.g. 2024-13-05, 00/00/2024, years 2026-2027)"
+orders,order_date repaired = shipped_date - 1 day,,,1457,
+orders,order_date repaired from neighbouring order numbers,,,148,
+orders,missing ship city filled with customer's city (assumption),,,6058,
+orders,ship city still unknown -> 'Unknown' (-1),,,330,
+order_items,"quantity words/decimals converted to whole numbers (one, 2.0 ...)",,,5767,
+order_items,negative quantity -> absolute value (sign error),,,307,
+order_items,product_id not found -> 'P_UNKNOWN' (broken reference),,,932,
+order_items,lines whose order does not exist -> rejects file,315143,315143,,
+order_items,negative unit_price -> absolute value,,,316,
+order_items,unit_price 0/9999999/blank/scale error (outside 0.5x-2x list price) -> list_price x 1.026 (assumption),,,1240,
+order_items,"quantity outliers (500, 0, blank) rebuilt from order_total (single-line orders)",,,115,
+order_items,quantity outliers in multi-line orders set to 1 (most common value),,,526,(assumption)
+order_items,blank/impossible discount_amount -> gross x discount % of the order,,,32447,
+orders,order_total negative/9999999/blank -> rebuilt from its lines,,,488,
