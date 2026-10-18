@@ -1,0 +1,89 @@
+# NexusMart pipeline: Airflow (scheduler + web UI) + a PostgreSQL warehouse, all in Docker.
+# Usage (from this folder):
+#   1. copy .env.example to .env and set DB_PASSWORD
+#   2. put the 9 raw CSV files in data/raw/
+#   3. docker compose up airflow-init        (first time only)
+#   4. docker compose up -d
+#   5. open http://localhost:8080  (user: admin / password: admin) and trigger the DAG "nexusmart_pipeline"
+
+x-airflow-common: &airflow-common
+  build: .
+  environment: &airflow-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db/airflow
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "false"
+    # --- project settings (credentials come from the .env file, never from the code) ---
+    PROJECT_DIR: /opt/airflow/project
+    NEXUS_DATA_DIR: /opt/airflow/project/data
+    NEXUS_SQL_DIR: /opt/airflow/project/sql
+    DB_HOST: warehouse-db
+    DB_PORT: "5432"
+    DB_USER: ${DB_USER:-postgres}
+    DB_PASSWORD: ${DB_PASSWORD:?Please set DB_PASSWORD in the .env file}
+    DB_NAME: ${DB_NAME:-nexusmart}
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./scripts:/opt/airflow/project/scripts
+    - ./sql:/opt/airflow/project/sql
+    - ./data:/opt/airflow/project/data
+  depends_on:
+    airflow-db:
+      condition: service_healthy
+    warehouse-db:
+      condition: service_healthy
+
+services:
+  airflow-db:            # Airflow's own bookkeeping database
+    image: postgres:16
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - airflow-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 10
+
+  warehouse-db:          # THE WAREHOUSE (star schema) that Power BI connects to
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Please set DB_PASSWORD in the .env file}
+      POSTGRES_DB: postgres
+    ports:
+      - "${WAREHOUSE_PORT:-5432}:5432"
+    volumes:
+      - warehouse-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${DB_USER:-postgres}"]
+      interval: 5s
+      retries: 10
+
+  airflow-init:          # runs once: creates Airflow's tables and the admin login
+    <<: *airflow-common
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate &&
+        airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com
+    restart: "no"
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+    restart: always
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    restart: always
+
+volumes:
+  airflow-db-data:
+  warehouse-db-data:
